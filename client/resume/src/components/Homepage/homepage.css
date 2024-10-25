@@ -1,0 +1,219 @@
+/* Container for image and text */
+.container {
+    display: flex;             /* Use flex for image and text */
+    align-items: center;       /* Align items vertically centered */
+}
+
+/* Image styling */
+.img img {
+    max-width: 80%;           /* Limit image width */
+    height: auto;             /* Maintain aspect ratio */
+    border-radius: 8px;       /* Rounded corners for image */
+    margin-top: 5rem;         /* Space above image */
+}
+
+/* Text styling */
+.text {
+    font-family: Arial, sans-serif;
+    /* display: flex;            Flex layout for text elements */
+    /* flex-direction: column;   Stack text elements vertically */
+    align-items: center;      /* Center-align text */
+}
+
+.text h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.text h2 {
+    font-size: 1.5em;
+    color: #666;
+}
+
+.text hr {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 10px 0;
+}
+
+
+
+/* Button styling */
+.button {
+    margin-top: 20px;        /* Space above the button */
+}
+
+.button button {
+    padding: 10px 20px;      /* Button padding */
+    font-size: 1em;          /* Button font size */
+    color: white;            /* Button text color */
+    background-color: #007bff; /* Button background color */
+    border: none;            /* Remove border */
+    border-radius: 5px;      /* Rounded corners */
+    cursor: pointer;         /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.button button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* New section for the introduction */
+.about-section {
+    display: flex;
+    /* margin-top: 40px;        Space between the text section and the new section */
+    padding: 20px;           /* Padding for the section */
+    /* background-color: #f9f9f9; Light background for contrast */
+    border-radius: 8px;      /* Rounded corners */
+    text-align: center; 
+    margin: 5rem;      /* Center-align text */
+}
+
+/* Styling for the paragraphs in the about section */
+.about-myself {
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.about-myself h1{
+    font-size: 2.5em;
+    color: #333;
+    text-transform:uppercase;
+}
+
+.about-myself p{
+    font-size: 1.3em;
+    color: #666;
+}
+
+.service{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.service h1{
+    text-transform:uppercase;
+}
+
+/* Container for cards */
+.card-container {
+    display: flex;                  /* Use Flexbox for layout */
+    justify-content: center;        /* Center the cards horizontally */
+    gap: 0;                         /* Remove space between cards */
+    margin: 40px;                /* Margin around the card container (optional) */
+}
+
+/* Individual card styling */
+.card {
+    background-color: #fff;        /* Card background color */
+    border: 1px solid #ddd;        /* Light border for the card */
+    border-radius: 8px;            /* Rounded corners */
+    padding: 20px;                 /* Padding inside the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    width: 300px;                  /* Set a fixed width for cards */
+    text-align: center;            /* Center the text */
+    margin: 8px;   
+                  /* Remove margin from cards */
+}
+
+/* Card heading styling */
+.card h3 {
+    font-size: 1.5em;              /* Font size for the heading */
+    color: #333;                   /* Dark text color */
+}
+
+/* Card paragraph styling */
+.card p {
+    font-size: 1em;                /* Font size for the paragraph */
+    color: #666;                   /* Lighter text color */
+    line-height: 1.5; 
+    margin: 0rem 2rem;             /* Line height for readability */
+}
+
+.project-text{
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin: 5rem;
+    font-size: 1em;              /* Font size for the heading */
+    color: #333;
+}
+/* Project Card Container */
+.project-card-container {
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+margin: 5rem;
+    /* flex-wrap: wrap; */
+}
+
+/* Individual Project Card Styling */
+.project-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 300px;             /* Or set a fixed width, e.g., 300px */
+    height: 250px;    
+            /* Allows the height to adjust proportionally */
+  }
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.education-container .text hr{
+    width: 20%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 10px auto;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.education-card {
+    width: 80%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+    
+}
+
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-card h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    color: #777;
+    margin: 5px 0;
+}
+.education-container .text hr {
+    width: 100%; /* Adjust the width as needed */
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 10px auto; /* Center horizontally */
+}

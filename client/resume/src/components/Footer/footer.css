@@ -1,0 +1,18 @@
+/* Main footer styling */
+.footer {
+    margin-top: 3rem;
+    background: linear-gradient(90deg, #667eea, #764ba2); /* Cool gradient background */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    color: #fff; /* White text for contrast */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  }
+ 
+  .footer-bottom {
+
+    /* margin-top: 2rem; Space above copyright text */
+    font-size: 1rem; /* Font size for copyright text */
+  }
+  

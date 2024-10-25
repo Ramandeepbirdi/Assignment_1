@@ -1,0 +1,62 @@
+/* Main header styling */
+.header {
+    background: linear-gradient(90deg, #667eea, #764ba2); /* Cool gradient background */
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+/* Title styling */
+.header-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.header-title:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    color: #fffcf2; /* Subtle color shift */
+}
+
+/* Navigation styling */
+.header-nav {
+    display: flex;
+    gap: 2rem; /* Space between links */
+}
+
+.header-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.header-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #fffcf2;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.header-link:hover::after {
+    width: 100%; /* Expands underline effect on hover */
+}
+
+.header-link:hover {
+    color: #fffcf2; /* Color shift for text on hover */
+}
